@@ -12,7 +12,7 @@ public class SchoolController {
 
     private SchoolRepository repository = new SchoolRepository();
 
-    @GetMapping("/school/update")
+    @GetMapping("/school/update") //finde es nach wie vor verwirrend, dass hier - wie auch beim return - kein '.html' steht
     public String getSchoolUpdate(Model model,
                                   @RequestParam Long id
     ) {
